@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale:1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dead Eye Coffee Bar</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" charset="utf-8">
+    <link rel="icon" href="resources/DeadEye%20Logo%20(Original)%20copy.png">
+</head>
+   
+<body>
+    
+    <div class="pimg1">
+    <section class="wrapper">
+       
+     <nav class="mainNav" id="responsiveNav">
+      <a href="#commerical_video">Home</a>
+      <a href="#mission_statement">Our Mission</a>
+      <a href="#menu">Menu</a>
+      <a href="#partners">Partners</a>
+      <a href="#merch">Merchandise</a>
+      <a href="#contact">Contact Us</a>
+      <a href="javascript:void(0);" style="font-size:3.5vw;" class="icon" onclick="myFunction()">&#9776;</a>
+    </nav>
+    
+    <script>      
+        window.onscroll = function() {myFunction()};
+
+        var navbar = document.getElementById("navbar");
+
+        var sticky = navbar.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+        navbar.classList.add("sticky")
+            } else {
+        navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+    
+    <script>
+    function myFunction() {
+        var x = document.getElementById("responsiveNav");
+        
+        if (x.className == "mainNav") {
+            x.className += " responsive";
+            //x.className = x.className + " responsive";
+        } 
+        
+        else {
+            x.className = "mainNav";
+        }
+    }
+    </script>
+          
+           <div class="video-wrap">
+            
+            <video muted autoplay loop id="commerical_video"> 
+                <source src="resources/DE_Commerical.mov" type="video/mp4"/>
+            </video>
+            
+            <img class="dead_eye_logo" src="resources/Dead_Eye_Logo%20(Inverse)_copy.png">
+        
+        </div>
+        
+        <div class="overlay">
+    
+    </div>
+     </section>
+    </div>
+           
+    <section class="section section-light"> 
+        <img id="mission_img" src="resources/Throwdown_@_Ritual_copy.JPG">
+        
+       <div id="mission_statement"> 
+        
+        <h2>The Dead Eye Experience</h2>
+        
+        <p>Dead Eye Coffee Bar is built on the simple idea of introducing a unique excitement from every cup of coffee that leaves our hands to yours. Our passion is not just coffee, but to bring out the uniqueness of each bean to stimulate your senses in each sip.
+        </p>
+        
+        <p>The true enjoyment of coffee is the experience each cup brings. The aroma of each inhale, the layers in each sip, the conversation induced by the complex flavors, are all part of the coffee experience. This is the environment we create every day at the shop and the reason we work tirelessly to collaborate with our community. We integrate the knowledge of our local business partners to enrich each cup of coffee we serve. We are dedicated to bringing the coffee experience to the community.</p>
+        
+           <button id="learn_more">Learn More<link href="index.html"></button>
+           
+        </div>
+    </section>
+    
+    <div class="pimg2">
+        <div class="ptext">
+            <span class="border trans">
+            Community
+            </span>
+        </div>
+    </div>
+          
+    <section class="section section-dark"> 
+        
+        <div id="menu">
+        <h3>Menu</h3>
+        </div>
+        
+        <div class="flex_container_menu">
+            <div class="flexmenu_item">
+            <h9>The Dead Eye </h9>
+            <img src="resources/Dead_Eye.JPEG" style= "width: 100%">
+                <p> THE Dead Eye: American style drip coffee topped with three added shots of espresso. Guaranteed to keep you wired all day and night...according to customer testimonies. We warned you. </p>
+            </div>
+            
+            <div class="flexmenu_item">
+            <h9>Spiced Rose Latte</h9>
+             <img src="resources/Spiced_Rose.JPEG" style= "width: 100%">
+                <p>A Latte made with shopmade Spiced Rose syrup—consisting of rose water, cinnamon, cardamom and simple syrup. Because your drink should taste just as good as it smells.</p>
+            </div>
+            
+            <div class="flexmenu_item">
+            <h9>Tahitian Vanilla Latte</h9>
+            <img src="resources/Tahitian_Vanilla.JPEG" style= "width: 100%">
+                 <p> A Latte made with shopmade Tahitian Vanilla syrup. Tahitian Vanilla lends itself to being slightly floral while also being just the right level of sweetness. </p>
+            </div>
+            
+        </div>
+        
+        <button id="See_The_Full_Menu">See the Full Menu</button>
+        
+    </section>        
+    
+    <div class="pimg3">
+        <div class="ptext">
+            <span class ="border trans">
+            Passion 
+            </span>
+        </div>
+    </div>
+    
+    <section class="section section-light"> 
+        
+        <div id="partners">
+        <h4>Our Partners</h4>
+        </div>
+        
+            <div class="partner_logos">
+                <img class="partnerimg" src="resources/Devout_Logo.png">
+                <img class="partnerimg" src="resources/Neighbor_Bakehouse_Logo.jpg">
+                <img class="partnerimg" src="resources/TCHO_logo.png">
+                <img class="partnerimg" src="resources/Fellow-Products_logo.jpg">
+                <img class="partnerimg" src="resources/4TrackTea.png">
+            </div>
+        
+    </section>   
+    
+    <div class="pimg2">
+        <div class="ptext">
+            <span class="border trans">
+            Genuine
+            </span>
+        </div>
+    </div>
+          
+    <section class="section section-dark"> 
+        
+        <div id="merch">
+        <h5>Merchandise</h5>
+        </div>
+        
+        <div class="flex_container_merch">
+            <div class="flexmerch_item">
+            <h9>Long Sleeve Shirt</h9>
+                <img src="resources/LongSleeves_MockUp_v1-01_copy.jpg" style= "width: 100%">
+                <p> The journey from bean to cup is very important to every coffee drinker, and for us, it's to make that journey worth while. The left hand sleeve shows an upward progression of beans to cup, illustrating the making of everyones' favorite bean water. </p>
+            </div>
+            
+            <div class="flexmerch_item">
+            <h9>Fleece Beanie</h9>
+                 <img src="resources/Beanie_MockUp_v1-01_copy.jpg" style= "width: 100%">
+                <p> You can't go wrong with a beanie, keeps your head warm, hides your bald spot...I mean makes you look fashionable and trendy. Comes in two colors: black and navy blue. Why? The owner loves navy blue that's why. </p>
+            </div>
+            
+            <div class="flexmerch_item">
+                <h9>Short Sleeve Shirt</h9>
+                <img src="resources/TShirt_MockUp_v1(2)-01_copy.jpg" style= "width: 100%">
+                 <p> The OG shirt that even the Dead Eye employees wear. Want to represent us wherever you go? Just click that button and you'll be able to feign being a Dead Eye barista anytime, anywhere. </p>
+            </div>
+        </div>
+         
+        <button id="See_All">See All</button>
+        
+    </section>          
+    
+    <div class="pimg3">
+        <div class="ptext">
+            <span class ="border trans">
+            No Bullshit
+            </span>
+        </div>
+    </div>
+    
+    <section class="section section-dark"> 
+        
+        <div id="contact">
+        <h6>Contact Us</h6>
+        </div>
+        
+        <div class="contact_info">
+        
+            <h7>Address</h7>
+                <h8>415 Grand Ave Suite 100, South San Francisco, CA 94080</h8>
+            
+            <h7>Phone Number</h7>
+                <h8>(650) 741-6619</h8>
+                
+            <h7>Email</h7>
+                <h8>info@deadeyecoffeebar.com</h8>
+        </div>
+        
+        <div class="fill_in_form">
+            
+            <form> 
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                
+                <label for="subject">Subject</label>
+                <input type="text" id="sbject" name="subject" placeholder="Subject">
+                
+                <label for="message">Message</label>
+                <input type="text" id="msg" name="message" placeholder="Type Something...">
+  
+                <input type="submit" value="Submit">
+        
+            </form>
+        </div>
+    </section>   
+    
+    <div class="pimg1">
+        <div class="ptext">
+            <span class ="border">
+            Come see us! 
+            </span>
+        </div>
+    </div>   
+    
+</body>
+</html>
